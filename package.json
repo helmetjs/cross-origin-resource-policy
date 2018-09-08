@@ -1,0 +1,37 @@
+{
+  "name": "cross-origin-resource-policy",
+  "author": "Evan Hahn <me@evanhahn.com> (https://evanhahn.com)",
+  "description": "Middleware to set the Cross-Origin-Resource-Policy header",
+  "version": "0.0.0",
+  "license": "MIT",
+  "keywords": [
+    "helmet",
+    "security",
+    "express",
+    "connect",
+    "cross-origin-resource-policy"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/helmetjs/cross-origin-resource-policy.git"
+  },
+  "bugs": "https://github.com/helmetjs/cross-origin-resource-policy/issues",
+  "scripts": {
+    "pretest": "npm run lint",
+    "lint": "standard --fix",
+    "test": "mocha"
+  },
+  "devDependencies": {
+    "connect": "^3.6.6",
+    "mocha": "^5.2.0",
+    "standard": "^12.0.1",
+    "supertest": "^3.3.0"
+  },
+  "standard": {
+    "globals": [
+      "describe",
+      "beforeEach",
+      "it"
+    ]
+  }
+}
