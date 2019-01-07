@@ -56,7 +56,7 @@ describe('crossOriginResourcePolicy', function () {
   })
 
   it('names its function and middleware', function () {
-    assert.strict.equal(crossOriginResourcePolicy.name, 'crossOriginResourcePolicy')
-    assert.strict.equal(crossOriginResourcePolicy().name, 'crossOriginResourcePolicy')
+    assert.strictEqual(crossOriginResourcePolicy.name, 'crossOriginResourcePolicy')
+    assert.strictEqual(crossOriginResourcePolicy().name, 'crossOriginResourcePolicy')
   })
 })
