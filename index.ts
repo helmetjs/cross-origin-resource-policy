@@ -2,10 +2,8 @@ import { IncomingMessage, ServerResponse } from 'http';
 
 const DEFAULT_POLICY = 'same-origin';
 
-type Policy = 'same-origin' | 'same-site';
-
 interface CrossOriginResourcePolicyOptions {
-  policy?: Policy;
+  policy?: string;
 }
 
 function getHeaderValue (options: CrossOriginResourcePolicyOptions) {

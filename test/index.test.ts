@@ -1,8 +1,8 @@
 import connect from 'connect';
 import supertest from 'supertest';
+import { IncomingMessage, ServerResponse } from 'http';
 
 import crossOriginResourcePolicy = require('..')
-import { IncomingMessage, ServerResponse } from 'http';
 
 describe('crossOriginResourcePolicy', () => {
   function makeApp (middleware: ReturnType<typeof crossOriginResourcePolicy>) {
