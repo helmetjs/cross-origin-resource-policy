@@ -15,6 +15,7 @@
     "type": "git",
     "url": "git://github.com/helmetjs/cross-origin-resource-policy.git"
   },
+  "homepage": "https://github.com/helmetjs/cross-origin-resource-policy",
   "bugs": {
     "url": "https://github.com/helmetjs/cross-origin-resource-policy/issues",
     "email": "me@evanhahn.com"
