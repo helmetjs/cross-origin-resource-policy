@@ -1,13 +1,11 @@
 import { IncomingMessage, ServerResponse } from "http";
 
-const DEFAULT_POLICY = "same-origin";
-
 interface CrossOriginResourcePolicyOptions {
   policy?: string;
 }
 
 function getHeaderValue(options: CrossOriginResourcePolicyOptions) {
-  const { policy = DEFAULT_POLICY } = options;
+  const { policy = "same-origin" } = options;
 
   if (policy !== "same-origin" && policy !== "same-site") {
     throw new Error(
