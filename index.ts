@@ -4,7 +4,7 @@ interface CrossOriginResourcePolicyOptions {
   policy?: string;
 }
 
-function getHeaderValue(options: CrossOriginResourcePolicyOptions) {
+function getHeaderValue(options: Readonly<CrossOriginResourcePolicyOptions>) {
   const { policy = "same-origin" } = options;
 
   if (policy !== "same-origin" && policy !== "same-site") {
@@ -17,7 +17,7 @@ function getHeaderValue(options: CrossOriginResourcePolicyOptions) {
 }
 
 export = function crossOriginResourcePolicy(
-  options: CrossOriginResourcePolicyOptions = {}
+  options: Readonly<CrossOriginResourcePolicyOptions> = {}
 ) {
   const headerValue = getHeaderValue(options);
 
