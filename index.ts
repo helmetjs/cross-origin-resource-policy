@@ -4,7 +4,9 @@ interface CrossOriginResourcePolicyOptions {
   policy?: string;
 }
 
-function getHeaderValue(options: Readonly<CrossOriginResourcePolicyOptions>) {
+function getHeaderValue(
+  options: Readonly<CrossOriginResourcePolicyOptions>
+): string {
   const { policy = "same-origin" } = options;
 
   if (policy !== "same-origin" && policy !== "same-site") {
