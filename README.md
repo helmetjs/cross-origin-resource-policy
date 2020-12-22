@@ -12,8 +12,8 @@ const crossOriginResourcePolicy = require("cross-origin-resource-policy");
 // Sets Cross-Origin-Resource-Policy: same-origin
 app.use(crossOriginResourcePolicy({ policy: "same-origin" }));
 
-// Sets Cross-site-Resource-Policy: same-site
-app.use(crosssiteResourcePolicy({ policy: "same-site" }));
+// Sets Cross-Origin-Resource-Policy: same-site
+app.use(crossOriginResourcePolicy({ policy: "same-site" }));
 ```
 
 This has limited browser support, so this module is currently in beta. It will be likely added to the main Helmet bundle when browser adoption improves.

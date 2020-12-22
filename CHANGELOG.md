@@ -1,5 +1,11 @@
 # Changelog
 
+## Unreleased
+
+### Fixed
+
+- Fixed incorrect example in README
+
 ## 0.2.0 - 2019-07-17
 
 ### Added
